@@ -3,6 +3,10 @@
 Uma base de códigos para novos projetos, implementando lógicas e as melhorando conforme a experiencia for sendo adquirida
 
 
+
+
+
+
 *[ANGULAR](https://github.com/Codinomexanm/Projects-ideas/tree/main/ANGULAR)
 
 *[C#](https://github.com/Codinomexanm/Projects-ideas/tree/main/C%23)
