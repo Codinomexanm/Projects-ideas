@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        button{
+            background: #ccc;
+            padding: 13px 17px;
+            font-size: 19px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        button{position: relative;
+        z-index: 0;
+        }
+        button::before{
+            content: "";
+            background: linear-gradient(
+                45deg,#ff0000,#ff7300,#fffb00,#00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glow 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+        }
+
+        button:hover:active{
+            color: #000;
+        }
+        button:hover::before{
+            opacity: 1;
+        }
+        button::after{
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ccc;
+            left: 0;
+            top: 0;
+        }
+        @keyframes glow{
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 400% 0;
+            }
+            100%{
+                background-position: 0 0;
+            }
+        }
+    </style>
+    <title>hover</title>
+</head>
+<body>
+   <button>hover Me</button> 
+</body>
+</html>
