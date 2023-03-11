@@ -25,7 +25,14 @@ fs.readFile('head.txt',(err,data)=>{
     let newName = nome.split('/');
     console.log(newName)
 })
-
+//função deletar
+fs.unlink('head.txt',(err)=>{
+    console.log('arquivo deletado.');
+})
+//função para renomear o arquivo, primeiro parametro o nome do arquivo o segundo parametro o novo nome
+fs.rename('head.txt','headForm.txt',()=>{
+    console.log('deu certo')
+})
 //função starta um servidor conforme necessidade
 const serve = http.createServer((req,res)=>{
  fs.readFile('index.html',(err,data)=>{
