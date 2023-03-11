@@ -18,7 +18,13 @@ fs.appendFile('danki.pdf',qual,(err)=>{
     if(err) throw err;
     console.log('deu certo');
 })
+// lê um arquivo local e tradur para lingaugem de maquina
+fs.readFile('head.txt',(err,data)=>{
+    let nome = data.toString();
 
+    let newName = nome.split('/');
+    console.log(newName)
+})
 
 //função starta um servidor conforme necessidade
 const serve = http.createServer((req,res)=>{
