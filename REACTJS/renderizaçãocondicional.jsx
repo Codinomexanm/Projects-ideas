@@ -6,7 +6,7 @@ const App = () => {
 
   return (
     <div>
-      //rederização condicional
+      {/* rederização condicional */}
       {
         (nome === "Alexandre")?
         <div>
