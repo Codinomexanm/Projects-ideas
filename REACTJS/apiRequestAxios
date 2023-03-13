@@ -1,0 +1,32 @@
+import React, { useState,useEffect } from 'react'
+import axios from 'axios'
+
+const App = () => {
+  const [nome,setNome]=useState([]);
+
+  useEffect(() => {
+    
+      axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(res=>{
+        setNome(res.data);
+      })
+    
+  })
+  
+
+  return (
+    <div>
+      {
+        nome.map((data)=>{
+          return(
+        <div>
+          <h2>{data.name}</h2>
+        </div>          
+          )
+        })
+      }
+    </div>
+  )
+}
+
+export default App
