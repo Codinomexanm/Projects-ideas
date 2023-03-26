@@ -29,3 +29,43 @@ function App() {
 }
 
 export default App
+
+
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+
+function App() {
+  const [reverse, setReverse] = useState(false);
+  const [contador, setContator] = useState(0);
+
+  const reverseClas = reverse ? 'reverse' : '';
+
+  const handleClick = () => {
+    setReverse(!reverse);
+  };
+  const handleCont = () => {
+    setContator((c) => c + 1);
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className={`App-logo ${reverseClas}`} alt="logo" />
+        <h1>o número é : {contador}</h1>
+        <p>
+          <button type="button" onClick={handleClick}>
+            reverse {reverseClas}
+          </button>
+        </p>
+        <p>
+          <button type="button" onClick={handleCont}>
+            adicionar
+          </button>
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
