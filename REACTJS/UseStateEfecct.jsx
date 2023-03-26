@@ -1,5 +1,5 @@
 import React,{useState,useEffect}from 'react'
-
+//primeiro exemplo
 function App() {
   const [horas,setHoras]=useState(4);
   const [minunt,setMinunt] = useState(30);
@@ -27,7 +27,7 @@ function App() {
     </div>
   )
 }
-
+//segundo exemplo
 export default App
 
 
