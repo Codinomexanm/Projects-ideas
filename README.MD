@@ -9,11 +9,10 @@ Uma base de códigos para novos projetos, implementando lógicas e as melhorando
 
 *[ANGULAR](https://github.com/Codinomexanm/Projects-ideas/tree/main/ANGULAR)
 
-*[JAVA](JAVA)
-
 *[CSS_HTML](https://github.com/Codinomexanm/Projects-ideas/tree/main/CSS_HTML)
 
-*[GAMES-IDS](https://github.com/Codinomexanm/Projects-ideas/tree/main/GAMES-IDS)
+*[JAVA](https://github.com/Codinomexanm/Projects-ideas/tree/main/JAVA)
+*[SPRING BOOT](https://github.com/Codinomexanm/Projects-ideas/tree/main/SPRING_BOOT)
 
 *[JAVASCRIPT](https://github.com/Codinomexanm/Projects-ideas/tree/main/JAVASCRIPT)
 
@@ -23,3 +22,6 @@ Uma base de códigos para novos projetos, implementando lógicas e as melhorando
 
 *[REACTJS](https://github.com/Codinomexanm/Projects-ideas/tree/main/REACTJS)
 
+*[NEXTJS](https://github.com/Codinomexanm/Projects-ideas/tree/main/NEXTJS)
+
+*[REACTNATIVE](https://github.com/Codinomexanm/Projects-ideas/tree/main/REACTNATIVE)
