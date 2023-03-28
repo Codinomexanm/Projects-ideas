@@ -9,9 +9,7 @@ Uma base de códigos para novos projetos, implementando lógicas e as melhorando
 
 *[ANGULAR](https://github.com/Codinomexanm/Projects-ideas/tree/main/ANGULAR)
 
-*[C#](https://github.com/Codinomexanm/Projects-ideas/tree/main/C%23)
-
-*[C++](https://github.com/Codinomexanm/Projects-ideas/tree/main/C%2B%2B)
+*[JAVA](JAVA)
 
 *[CSS_HTML](https://github.com/Codinomexanm/Projects-ideas/tree/main/CSS_HTML)
 
