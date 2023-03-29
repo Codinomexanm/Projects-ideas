@@ -1,0 +1,179 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+
+}
+
+body {
+
+  background: #e3f2fd;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.select-btn {
+
+  width: 300px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  margin-top: 3rem;
+
+  padding: 20px;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  border-radius: 8px;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  justify-content: space-between;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+ .options {
+
+  position: absolute;
+
+  width: 300px;
+
+  overflow: auto;
+
+  max-height: 295px;
+
+  padding: 10px;
+
+  margin-top: 10px;
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  display: none;
+
+  animation: fadeInDown 0.35s both;
+
+}
+
+ .options .option {
+
+  display: flex;
+
+  height: 55px;
+
+  cursor: pointer;
+
+  padding: 0 16px;
+
+  border-radius: 8px;
+
+  align-items: center;
+
+  background: #fff;
+
+}
+
+ .options .option:hover {
+
+  background: #f2f2f2;
+
+}
+
+ .options .option .option-text {
+
+  font-size: 18px;
+
+  color: #333;
+
+}
+
+.select-btn svg {
+
+  height: 24px;
+
+  width: 24px;
+
+  transition: 0.2s;
+
+}
+
+.active .select-btn svg {
+
+  transform: rotate(180deg);
+
+}
+
+.active .options {
+
+  display: block;
+
+  opacity: 0;
+
+  z-index: 10;
+
+  animation: fadeInUp 0.4s both;
+
+}
+
+@keyframes fadeInUp {
+
+  from {
+
+    transform: translate3d(0, 30px, 0);
+
+  }
+
+  to {
+
+    transform: translate3d(0, 0, 0);
+
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes fadeInDown {
+
+  from {
+
+    transform: translate3d(0, 0, 0);
+
+    opacity: 1;
+
+  }
+
+  to {
+
+    transform: translate3d(0, 20px, 0);
+
+    opacity: 0;
+
+  }
+
+}
